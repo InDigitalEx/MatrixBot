@@ -1,0 +1,12 @@
+# Telegram
+aiogram
+
+# Debug
+loguru
+
+# Misc
+path
+pdf2image
+
+# Parser
+selenium
