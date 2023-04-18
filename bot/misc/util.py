@@ -5,7 +5,11 @@ from pdf2image import convert_from_path
 
 
 def get_root_dir():
-    return os.path.dirname(sys.modules['__main__'].__file__)
+    try:
+        file = os.path.abspath(sys.modules['__main__'].__file__)
+    except:
+        file = sys.executable
+    return os.path.dirname(file)
 
 
 def convert_pdf_to_image(path: str, file_name: str, output_name: str):

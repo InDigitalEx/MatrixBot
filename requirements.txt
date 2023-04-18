@@ -10,3 +10,4 @@ pdf2image
 
 # Parser
 selenium
+webdriver-manager

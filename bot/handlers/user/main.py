@@ -1,10 +1,9 @@
-from aiogram import Dispatcher, Bot
+from aiogram import Dispatcher
 from aiogram.types import Message
 
 from bot.handlers.user.matrix import _register_matrix_handlers
-
-from bot.misc import Messages
 from bot.keyboards import KB_MAIN
+from bot.misc import Messages
 
 
 async def __start(msg: Message) -> None:

@@ -11,4 +11,3 @@ def register_all_handlers(dp: Dispatcher) -> None:
     )
     for handler in handlers:
         handler(dp)
-

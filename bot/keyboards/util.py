@@ -1,6 +1,4 @@
-from copy import deepcopy
-
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import ReplyKeyboardMarkup
 
 
 def get_main_keyboard() -> ReplyKeyboardMarkup:

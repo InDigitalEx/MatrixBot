@@ -3,7 +3,7 @@ from typing import Final
 
 from aiogram.types import Message
 
-from bot.misc import Config
+from bot.misc.config import Config
 
 
 class Messages(ABC):
@@ -11,7 +11,8 @@ class Messages(ABC):
     # Basic messages
 
     MSG_MATRIX_NAME: Final = "<b>Введите имя человека</b>"
-    MSG_MATRIX_DATE: Final = "<b>Введите дату рождения в формате 01.01.2000</b>"
+    MSG_MATRIX_DATE: Final = "<b>Введите дату рождения в формате <i>01.01.2000</i></b>"
+    MSG_MATRIX_DATE_ERROR: Final = "<b>Ошибка! Введите дату в формате <i>01.01.2000</i></b>"
     MSG_MATRIX_GENDER: Final = "<b>Выберите пол</b>"
     MSG_MATRIX_DONE: Final = "<b>Загрузка... ⏳⏳⏳</b>"
 
